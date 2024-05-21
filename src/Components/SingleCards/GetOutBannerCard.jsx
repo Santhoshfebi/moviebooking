@@ -1,5 +1,4 @@
 import React from "react";
-import Premiere from "../Resources/premiere-tag.avif";
 import GetOut from "../Resources/MoviePoster/GetOut.avif";
 import GetOutbg from "../Resources/MoviePoster/GetOutBackground.avif";
 
@@ -18,7 +17,6 @@ const GetOutBannerCard = () => {
         </div>
         <div className="left-80 relative ">
           <div className="relative">
-            <img src={Premiere} alt="" className="absolute  w-[85px] top-24 " />
             <span className="absolute rounded-xl  bg-[#1F253A] text-xs top-24 left-24 px-5 py-[2px] text-white">
               Streaming Now
             </span>

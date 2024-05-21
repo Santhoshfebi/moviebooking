@@ -1,7 +1,6 @@
 import React from "react";
 import Aazambg from "../Resources/MoviePoster/AazamBackdround.avif";
 import Aaazam from "../Resources/MoviePoster/Aazam.avif";
-import Premiere from "../Resources/premiere-tag.avif";
 
 const AazamBannerCard = () => {
   return (
@@ -18,7 +17,6 @@ const AazamBannerCard = () => {
         </div>
         <div className=" left-80 relative ">
           <div className="relative">
-            <img src={Premiere} alt="" className="absolute  w-[85px] top-24 " />
             <span className="absolute rounded-xl  bg-[#1F253A] text-xs top-24 left-24 px-5 py-[2px] text-white">
               Streaming Now
             </span>

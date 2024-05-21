@@ -1,5 +1,4 @@
 import React from "react";
-import Premiere from "../Resources/premiere-tag.avif";
 import Dinosaurs from "../Resources/MoviePoster/Dinosaurs.avif";
 import Dinosaursbg from "../Resources/MoviePoster/DinosaursBackground.avif";
 
@@ -18,7 +17,6 @@ const DinosaursBannerCard = () => {
         </div>
         <div className="left-80 relative ">
           <div className="relative">
-            <img src={Premiere} alt="" className="absolute  w-[85px] top-24 " />
             <span className="absolute rounded-xl  bg-[#1F253A] text-xs top-24 left-24 px-5 py-[2px] text-white">
               Streaming Now
             </span>
