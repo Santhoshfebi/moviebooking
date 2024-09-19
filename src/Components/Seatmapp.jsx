@@ -34,9 +34,10 @@ const Seatmapp = () => {
   return (
     <div>
       <h1 className="text-center mt-4">Select Your Seat . . . !</h1>
+      <h2 className="text-center mt-4">screen is this way </h2>
       <div className="container mx-auto p-4 relative">
         <div className="grid grid-cols-12 gap-4">
-          {Array.from({ length: 96 }, (_, index) => (
+          {Array.from({ length: 72 }, (_, index) => (
             <button
               key={index}
               className={`border-2 rounded-md p-2 ${
@@ -58,10 +59,11 @@ const Seatmapp = () => {
             <div className="flex justify-center items-center relative">
               <div className="bg-red-500 w-2/6 h-10 items-center rounded-md absolute top-2 mr-40">
                 <button className="text-white ml-44 py-2 px-4">
-                  Pay Rs. ₹{calculateTotalAmount()}.00
+                  Pay Rs. ₹{calculateTotalAmount()}.00 
                 </button>
               </div>
             </div>
+
           </div>
         )}
       </div>

@@ -15,36 +15,39 @@ import "swiper/css/navigation";
 const Carousal = () => {
   return (
     <>
-      <Swiper
-        slidesPerView={1.3}
-        spaceBetween={10}
-        centeredSlides={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        initialSlide={0}
-        loop={true}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src={img1} className="rounded-2xl" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img2} className="rounded-2xl" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img3} className="rounded-2xl" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img4} className="rounded-2xl" alt="" />
-        </SwiperSlide>
-      </Swiper>
+      
+        <Swiper
+          slidesPerView={1}         
+          spaceBetween={10}
+          centeredSlides={true}
+          direction={"vertical"}           // Changed to the direction to vertical as informed 
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          initialSlide={0}
+          loop={true}
+          className="mySwiper h-80"     
+        >
+          <SwiperSlide>
+            <img src={img1} className="rounded-2xl w-full h-full object-cover" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img2} className="rounded-2xl w-full h-full object-cover" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img3} className="rounded-2xl w-full h-full object-cover" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img4} className="rounded-2xl w-full h-full object-cover" alt="" />
+          </SwiperSlide>
+        </Swiper>
+      
     </>
   );
 };
